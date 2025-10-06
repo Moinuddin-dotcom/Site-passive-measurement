@@ -95,10 +95,10 @@ export default function HomePage() {
 
         <div>
           <Label className="mb-2.5">Desired BB Hours</Label>
-            <Input
-              type="number"
-              {...register("desiredBBHrs")}
-            />
+          <Input
+            type="number"
+            {...register("desiredBBHrs")}
+          />
         </div>
 
         <div>
@@ -227,7 +227,12 @@ export default function HomePage() {
         </div>
       )}
 
-
+      <footer className="mt-32 py-8 text-center  border-t border-gray-200 bg-white dark:bg-gray-900 dark:border-gray-800 dark:text-gray-400">
+        <p className="text-sm text-gray-500 dark:text-gray-400">© 2025 Site-passive-measurement</p>
+        <div>
+          <p className="text-gray-500 text-sm">Developed by <a href="https://moinuddin-portfolio-lime.vercel.app/" className="text-black font-semibold hover:underline hover:underline-offset-4 hover:text-blue-400 hover:font-normal">Md Moinuddin Chowdhury</a></p>
+        </div>
+      </footer>
     </div>
   );
 }

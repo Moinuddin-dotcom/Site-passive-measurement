@@ -84,12 +84,12 @@ export function calculateBattery(inputs: BatteryInputs): Results {
             ok: isOk(designChargingFactor, actualChargingFactor),
             difference: (designChargingFactor - actualChargingFactor).toFixed(2),
         },
-        {
-            parameter: "CP",
-            design: designCP.toFixed(2),
-            actual: actualCP.toFixed(2),
-            ok: isOk(designCP, actualCP),
-            difference: (designCP - actualCP).toFixed(2),
-        },
+        // {
+        //     parameter: "CP",
+        //     design: designCP.toFixed(2),
+        //     actual: actualCP.toFixed(2),
+        //     ok: isOk(designCP, actualCP),
+        //     difference: (designCP - actualCP).toFixed(2),
+        // },
     ];
 }
